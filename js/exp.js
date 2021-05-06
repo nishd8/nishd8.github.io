@@ -1,7 +1,7 @@
 var expHTML = `
 <div class="row">
-                  <div class="col-lg-10 p-lg-5 offset-lg-1">
-                     <div class="container">
+                  <div class="col-lg-8 offset-lg-2 mt-5">
+                     <div class="container-fluid">
                           <div class="main-timeline">
                             <div class="timeline left">
                               <div class="card">

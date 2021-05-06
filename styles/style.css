@@ -1,0 +1,185 @@
+         .bg-dark-grey{
+         background-color:#424242;
+         }
+         .shadows{
+         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+         }
+         .bg-grey{
+         background-color: #d5d5d5;
+         }
+         .hover-high{
+            cursor: pointer;
+         }
+         .hover-high:hover{
+         background-color: #4c4c4c;
+         color: white;
+         }
+         .inline-icon {
+            vertical-align: bottom;
+            font-size: 20px !important;
+        }
+        .custom-button{
+            outline: none;
+            background-color: transparent;
+            border: 0;
+            cursor: pointer;
+            color:white;
+            font-size: 20px;
+        }
+        .custom-button:hover{
+            color:black;
+        }
+        body{
+            background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25'%3E%3Cdefs%3E%3Cpattern id='pattern' width='70' height='70' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform='rotate(133)'%3E%3Crect id='pattern-background' width='400%25' height='400%25' fill='rgba(245, 245, 245,1)'%3E%3C/rect%3E%3Ccircle fill='rgba(8, 148, 140,1)' cx='40' cy='20' r='0.25'%3E%3C/circle%3E%3Ccircle fill='rgba(8, 148, 140,1)' cx='0' cy='20' r='1'%3E%3C/circle%3E%3Ccircle fill='rgba(8, 148, 140,1)' cx='40' cy='20' r='1'%3E%3C/circle%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23pattern)' height='100%25' width='100%25'%3E%3C/rect%3E%3C/svg%3E");
+            background-position: center;
+            background-size: 100% 100%;
+
+
+        }
+        .transparent-bg{
+            background-color: rgba(255,255,255);
+        }
+        .border-img{
+           border: 10px solid #08948c;
+        }
+        .selected{
+         background-color: #f5f5f5;
+         cursor: pointer;
+        }
+        .card-w{
+           width: 24%;
+           display: inline-block;
+        }
+        .d-flex{
+           display: flex;
+        }
+        @media only screen and (max-width: 1289px) {
+         .card-w{
+           width: 100%;
+           margin-top: 20px;
+         }
+         }
+       /* The actual timeline (the vertical ruler) */
+.main-timeline {
+  position: relative;
+}
+
+/* The actual timeline (the vertical ruler) */
+.main-timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #08948c;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.timeline {
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -13px;
+  background-color: #08948c;
+  border: 5px solid #F5DF4D;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  padding: 0px 40px 20px 0px;
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  padding: 0px 0px 20px 40px;
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -12px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 1000px) {
+  /* Place the timelime to the left */
+  .main-timeline::after {
+    left: 31px;
+  }
+
+  /* Full-width containers */
+  .timeline {
+    width: 100%;
+    padding-left: 75px;
+    padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .timeline::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 18px;
+  }
+
+  .left::before {
+    right: auto;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+.lead{
+    font-size: 17px !important; 
+   }    
+.butn{
+   outline: 0;
+   padding: 10px;
+   border: 0;
+   border-radius: 5px;
+}
